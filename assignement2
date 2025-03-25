@@ -5,152 +5,156 @@ Code For Wildlife Conservation Platform in HTML Language:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Conservation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wild Lands Deer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            background: gold;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h1 em {
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .explore {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .explore:hover {
+            background: white;
+            color: black;
+        }
+
+        .sidebar {
+            position: absolute;
+            right: 5%;
+            top: 40%;
+            color: white;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            text-align: right;
+        }
+
+        .sidebar li {
+            padding: 10px 0;
+            font-size: 18px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+
+        .sidebar .active {
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            display: flex;
+            gap: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .menu span {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-    <header>
-        <h1>Wildlife Conservation</h1>
-        <p>Protecting Nature for Future Generations</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Wildlife Conservation</h2>
-        <p>Wildlife conservation aims to protect animal species, their habitats, and biodiversity. It is crucial for maintaining ecological balance and protecting endangered species.</p>
-    </section>
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="images/tiger.jpg" alt="Tiger">
-            <img src="images/elephant.jpg" alt="Elephant">
-            <img src="images/bird.jpg" alt="Bird">
+    <div class="hero">
+        <img src="deer 1.jpg" alt="Wild Lands Deer" class="background-image">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="logo"> 
+                <span class="circle"></span> CULTURE
+            </div>
+            <h1><em>The</em> <span class="bold">Wild Lands</span> <em>Deer</em></h1>
+            <button class="explore">Explore</button>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 Wildlife Conservation. All Rights Reserved.</p>
-    </footer>
-
+        <div class="sidebar">
+            <ul>
+                <li class="active">01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <span class="search">&#128269;</span>
+            <span class="hamburger">&#9776;</span>
+        </div>
+    </div>
 </body>
 </html>
-
-
-# Code for Wildlife Conservation Platform in CSS Language:
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-header {
-    background-color: #2c6e49;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background-color: #1b4332;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.animal-card {
-    display: inline-block;
-    width: 250px;
-    margin: 15px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.animal-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-form {
-    max-width: 400px;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #2c6e49;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #1b4332;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
 
